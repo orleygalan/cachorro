@@ -1,0 +1,525 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<style type="text/css">
+		.contenedor{
+			background-color: #fbc302;
+			width: 100%;
+			margin: 0;
+		}
+		.contenedor .cabeza{
+			background-color: #daac00;
+			gap: 40px;
+			width: 100%;
+			display: flex;
+			height: 100px;
+			align-items: center;
+		}
+		.contenedor .cabeza .logo img{
+			width: 230px;
+		    padding-left: 100px;
+			padding-top: 18px;
+			gap: 40px;
+		}
+		.contenedor .menu ul{
+			display: flex;
+			gap:20px;
+			list-style:none;
+		}
+		.contenedor .menu ul a{
+			text-decoration:none;
+			color: white;
+			font-family: 'Poppins', sans-serif;
+/*			gap: 40px;*/
+		}
+		.contenedor .menu ul a:hover{
+			color: aqua;
+			transition:2s;
+		}
+		.contenedor .buscador{
+			display: flex;
+		}
+		.contenedor .lupa{
+			background-color:white;
+			padding:0px;
+		}
+		.contenedor .lupa img{
+			width:37px;
+		}
+		.contenedor .madera{
+			font-size: 19px;
+			width: 430px;
+			padding-left: 66px
+		}
+		.contenedor .madera h1{
+			padding-top:70;
+			width: 440px;
+			font-size: 46px;
+			color: white;
+			font-family: 'Poppins', sans-serif;
+		}
+		.contenedor .hoja{
+			display: flex;
+		}
+		.contenedor .tronco .rama p{
+			width: 495px;
+			padding-left: 66px;
+			font-size: 22px;
+			color: white;
+			font-family: 'Poppins', sans-serif;
+		}
+		.contenedor .hoja img{
+			width: 400px;
+		}
+		.contenedor .rama .hoja{
+			display: flex;
+		}
+		.contenedor .botones .boton1 a{
+			background-color: blue;
+    		padding: 10px;
+    		border-radius: 5px;
+    		display: flex;
+    		color: white;
+    		text-decoration: none;
+			width: 111px;
+			margin-left: 69px
+		}
+		.contenedor .botones .boton2 a{
+			background-color: #d9ab00;
+    		padding: 10px;
+    		border-radius: 5px ;
+    		display: flex;
+    		color: white;
+    		text-decoration: none;
+			width: 111px;
+		}
+		.contenedor2{
+			background-color: white;
+			/* width: 80%; */
+			/* height: 90%; */
+		}
+		.contenedor2 .titulo h4{
+			padding-top: 136px;
+			padding-left: 100px;
+			width: 370px;
+			font-size: 30px;
+			color: black;
+			font-family: 'Poppins', sans-serif;
+		}
+		.contenedor .titulo p{
+			font-size: 18px;
+			padding-left: 100px;
+		    width: 355px;
+			font-family: 'Poppins', sans-serif;
+
+		}
+		.contenedor2 .boton .boton1 a{
+			text-decoration: none;
+			background-color: #fbc301;
+			color:white;
+			border-radius: 5px;
+			margin-left: 260px;
+			width: 59px;
+			padding: 10px;
+		}
+		.contenedor .boton .boton1{
+			margin-top: 30px;
+		}
+		.contenedor2 .canino img{
+			width: 300px;
+		}
+		.contenedor3{
+			background-color: #fbc301;
+			text-align: center;
+			height: 90%;
+		}
+		.contenedor .titulo3 h1{
+			font-size: 50px;
+			font-family: 'Poppins', sans-serif;
+			color: white;
+		}
+		.contenedor .titulo3 p{
+			font-size: 14px;
+			width: 334px;
+			padding-left: 364;
+			color: white;
+			font-family: 'Poppins', sans-serif;
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="cabeza">
+			<div class="logo">
+				<img src="see.png">
+			</div>
+			<div class="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="buscador">
+				<input type="text" name="" placeholder="search..">
+				<div class="lupa">
+					<img src="lupa.png">
+				</div>
+			</div>
+		</div>
+		<div class="tronco">
+			<div class="madera">
+				<h1>First I wanted to be
+					a veterinarian</h1>
+			</div>
+			<div class="rama">
+				<p>
+					Lorem Ipsum available but the majority have
+					suffered alteration in some form, by injected
+					humour randomised words.
+				</p>
+			</div>
+			<div class="botones">
+				<div class="boton1"> <a href="#">Contact us </a> </div>
+				<div class="boton2"> <a href="#">Our service </a> </div>
+			</div>
+		</div>
+		<div>
+			<div class="hoja">
+				<img src="perro.png.png">
+			</div>
+		</div>
+		<div class="contenedor2">
+			<div class="titulo">
+				<h4>As a veterinarian and
+					lover of animals.
+				</h4>
+				<p>
+					Lorem Ipsum available but the majoty
+					suffered alteration in some form, by
+					humour randomised words.
+				</p>
+			</div>
+			<div class="boton">
+				<div class="boton1">
+					<a href="#">Our Service</a>
+				</div>
+			</div>
+			<div class="doctorperro">
+				<div class="canino">
+					<img src="dogpolice.png">
+				</div>
+			</div>
+		</div>
+		<div class="contenedor3">
+			<div class="titulo3">
+				<h1>Title Here</h1>
+				<p>Lorem Ipsum available, but the majority have
+					suffered alteration in some form.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</body>
+</html>
